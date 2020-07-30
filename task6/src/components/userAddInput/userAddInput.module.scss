@@ -1,23 +1,45 @@
 .userAdd {
-  color: red;
+  width: calc(53% - 15px);
   margin: 50px auto 20px;
-  width: calc(50% - 15px);
-transform: translateX(-15px);
+  color: red;
 
   input {
-    height: 40px;
-    border-radius: 10px;
-    box-shadow: none;
-    outline: none;
-    border: solid 1px gray;
-    padding: 0 15px;
     font-size: 18px;
     font-weight: lighter;
     width: 100%;
+    height: 40px;
+    padding: 0 15px;
     transition: 200ms;
+    border: solid 1px gray;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: none;
 
     &:focus {
-      box-shadow: 0 0 10px  #61dbfb;
+      box-shadow: 0 0 10px #61DBFB;
     }
+  }
+
+  label {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+}
+
+.userAddIcon {
+  color: black;
+  position: absolute;
+  right: 15px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 150ms;
+
+  &:hover {
+    color: #61DBFB;
+  }
+
+  &:active {
+    color: lighten(#61DBFB, 10%);
   }
 }

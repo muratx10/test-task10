@@ -38,13 +38,15 @@ class App extends React.PureComponent {
 
   onSubmit = (e) => {
     e.preventDefault();
-    this.setState(state => ({
-      list: [...state.list, {
-        first_name: state.value,
-        id: new Date().getMilliseconds(),
-      }],
-      value: '',
-    }))
+    if (this.state.value) {
+      this.setState(state => ({
+        list: [...state.list, {
+          first_name: state.value.trim(),
+          id: new Date().getMilliseconds(),
+        }],
+        value: '',
+      }))
+    }
   }
 
   render() {
