@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Domain1</title>
+</head>
+<link rel="stylesheet" href="styles.css">
+
+<style>
+  iframe {
+    background: rgba(0, 0, 0, 0.3);
+  }
+</style>
+
+<body>
+  <button id="reload">RELOAD</button>
+  <div class="domain1">
+    <h1>DOMAIN 1</h1>
+    <form action="#" id="write">
+      <label for="key">
+        enter <code>key</code>
+        <input type="text" name="key" class="key">
+      </label>
+      <label for="text">
+        type some text
+        <input type="text" name="text" id="text" required>
+      </label>
+      <button type="submit">WRITE to <code>localStorage</code> of <b>domain2</b></button>
+    </form>
+    <form action="#" id="read">
+      <label for="key">
+        enter <code>key</code>
+        <input type="text" name="key" class="key">
+      </label>
+      <button type="submit">READ from <code>localStorage</code> of <b>domain2</b></button>
+    </form>
+    <form action="#" id="delete">
+      <label for="key">
+        enter <code>key</code>
+        <input type="text" name="key" class="key">
+      </label>
+      <button type="submit">DELETE from <code>localStorage</code> of <b>domain2</b></button>
+    </form>
+  </div>
+  <div id="frame">
+    <iframe src="http://127.0.0.1:3001/" frameborder="1"></iframe>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

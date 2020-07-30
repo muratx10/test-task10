@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RESLIV test task</title>
+</head>
+<link rel="stylesheet" href="">
+<style>
+  body {
+    padding: 40px;
+  }
+
+  input {
+    font-size: 24px;
+  }
+
+  #manufacturer {
+    font-size: 18px;
+    margin-bottom: 15px;
+    width: 100px;
+    text-align: center;
+  }
+</style>
+
+
+<body>
+  <form class="salesForm">
+
+    <div id="size">
+      <h4>Size</h4>
+      <input type="radio" id='S' name='size' value="S">S
+      <input type="radio" id='M' name='size' value="M">M
+      <input type="radio" id='L' name='size' value="L">L
+    </div>
+
+
+    <div id="color">
+      <h4>Color</h4>
+      <input type="checkbox" id='color1' name='color' value="1">1
+      <input type="checkbox" id='color2' name='color' value="2">2
+      <input type="checkbox" id='color3' name='color' value="3">3
+      <input type="checkbox" id='color4' name='color' value="4">4
+      <input type="checkbox" id='color5' name='color' value="5">5
+    </div>
+
+
+    <h4>Manufacturer</h4>
+    <select multiple name="manufacturer" id="manufacturer">
+      <option value="aaa">aaa</option>
+      <option value="b&c">b&c</option>
+      <option value="ddd">ddd</option>
+      <option value="eee">eee</option>
+    </select>
+
+
+    <div id="sale">
+      <input type="checkbox" name="sale" value="1">
+      Sale
+    </div>
+  </form>
+
+
+  <script src="index.js"></script>
+</body>
+
+</html>

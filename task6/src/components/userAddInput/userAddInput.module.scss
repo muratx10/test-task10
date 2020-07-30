@@ -1,0 +1,23 @@
+.userAdd {
+  color: red;
+  margin: 50px auto 20px;
+  width: calc(50% - 15px);
+transform: translateX(-15px);
+
+  input {
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: none;
+    outline: none;
+    border: solid 1px gray;
+    padding: 0 15px;
+    font-size: 18px;
+    font-weight: lighter;
+    width: 100%;
+    transition: 200ms;
+
+    &:focus {
+      box-shadow: 0 0 10px  #61dbfb;
+    }
+  }
+}
